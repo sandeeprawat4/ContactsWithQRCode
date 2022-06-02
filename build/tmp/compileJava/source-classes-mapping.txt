@@ -1,4 +1,4 @@
+com/sr/Main.java
+ com.sr.Main
 com/sr/controller/SpringRestController.java
  com.sr.controller.SpringRestController
-com/sr/appication/Main.java
- com.sr.appication.Main
