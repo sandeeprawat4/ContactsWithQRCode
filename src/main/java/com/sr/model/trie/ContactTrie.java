@@ -1,5 +1,10 @@
 package com.sr.model.trie;
 
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+
+@Service
 public class ContactTrie {
     TrieNode root;
     public ContactTrie(){
@@ -14,5 +19,11 @@ public class ContactTrie {
                 node = node.trie.get(c);
         }
         node.end = true;
+    }
+
+    public ArrayList<String> getAll() {
+        ArrayList<String> allNames = new ArrayList<>();
+
+        return null;
     }
 }
