@@ -7,6 +7,7 @@ import java.util.ArrayList;
 @Service
 public class ContactTrie {
     TrieNode root;
+    ArrayList<String> allNames = new ArrayList<>();
     public ContactTrie(){
         this.root = new TrieNode();
     }
@@ -22,8 +23,12 @@ public class ContactTrie {
     }
 
     public ArrayList<String> getAll() {
-        ArrayList<String> allNames = new ArrayList<>();
+        TrieNode node = root;
+        getAllNames(node);
+        return allNames;
+    }
 
-        return null;
+    public void getAllNames(TrieNode node){
+
     }
 }
