@@ -19,7 +19,7 @@ public class ContactsInsertController {
         contactTrie.insert(s);
     }
 
-    @GetMapping ("getAll")
+    @GetMapping ("/getAll")
     public ArrayList<String> getAll(){
         return contactTrie.getAll();
     }
